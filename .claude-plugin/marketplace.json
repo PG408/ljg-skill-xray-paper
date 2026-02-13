@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Deconstructs academic papers like an X-ray machine, extracting core contributions, critical assumptions, and napkin-worthy insights from research papers.",
-    "version": "1.0.0"
+    "version": "1.1.0"
   },
   "plugins": [
     {
