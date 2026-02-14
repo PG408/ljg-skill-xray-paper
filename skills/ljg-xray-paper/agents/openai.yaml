@@ -1,0 +1,4 @@
+interface:
+  display_name: "LJG X-Ray Paper"
+  short_description: "Deconstruct an academic paper into plain-language logic."
+  default_prompt: "Use ljg-xray-paper to analyze this paper and produce a structured report."

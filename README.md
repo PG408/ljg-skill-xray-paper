@@ -1,6 +1,6 @@
 # ljg-skill-xray-paper
 
-论文X光机 (Paper X-Ray Scanner) — 一个 [Claude Code](https://docs.anthropic.com/en/docs/claude-code) Skill，解构学术论文，穿透学术黑话，还原作者最底层的逻辑模型。
+论文X光机 (Paper X-Ray Scanner) — 一个 **CodeX Skill**，解构学术论文，穿透学术黑话，还原作者最底层的逻辑模型。
 
 ## 功能
 
@@ -12,20 +12,26 @@
 - 自包含输出：禁止裸公式，术语即用即释
 - 生成 Org-mode 格式报告，含 ASCII 逻辑流程图
 
-## 安装
+## 在 CodeX 中安装
 
 ```bash
-/plugin marketplace add lijigang/ljg-skill-xray-paper
-/plugin install ljg-xray-paper
+python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
+  --url https://github.com/lijigang/ljg-skill-xray-paper/tree/main/skills/ljg-xray-paper
 ```
 
-## 使用
+安装后重启 CodeX 以加载新 Skill。
 
-在 Claude Code 中输入：
+## 在 CodeX 中使用
+
+在 CodeX 中直接描述任务，例如：
 
 ```
-/ljg-xray-paper <论文PDF路径、URL或粘贴内容>
+请使用 ljg-xray-paper 分析这篇论文：<论文PDF路径、URL或粘贴内容>
 ```
+
+## Claude 兼容说明
+
+仓库保留 `.claude-plugin/` 元数据，方便已有 Claude 侧流程继续使用；CodeX 适配文件位于 `skills/ljg-xray-paper/agents/openai.yaml`。
 
 ## 输出示例
 
