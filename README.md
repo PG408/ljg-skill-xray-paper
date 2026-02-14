@@ -1,6 +1,6 @@
 # ljg-skill-xray-paper
 
-论文X光机 (Paper X-Ray Scanner) — 一个 **CodeX Skill**，解构学术论文，穿透学术黑话，还原作者最底层的逻辑模型。
+论文X光机 (Paper X-Ray Scanner) — 一个 **CodeX Skill**，本项目由 [lijigang/ljg-skill-xray-paper](https://github.com/lijigang/ljg-skill-xray-paper) fork 后改造为 CodeX 适配版本，用于解构学术论文，穿透学术黑话，还原作者最底层的逻辑模型。
 
 ## 功能
 
@@ -14,12 +14,26 @@
 
 ## 在 CodeX 中安装
 
+方式 1：从 GitHub 安装（推荐）
+
 ```bash
 python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
-  --url https://github.com/lijigang/ljg-skill-xray-paper/tree/main/skills/ljg-xray-paper
+  --url https://github.com/PG408/ljg-skill-xray-paper/tree/master/skills/ljg-xray-paper
+```
+
+方式 2：从本地仓库安装（适合你本地调试后立即验证）
+
+```bash
+cp -R skills/ljg-xray-paper ~/.codex/skills/ljg-xray-paper
 ```
 
 安装后重启 CodeX 以加载新 Skill。
+
+可选验证（确认已安装）：
+
+```bash
+ls -la ~/.codex/skills/ljg-xray-paper
+```
 
 ## 在 CodeX 中使用
 

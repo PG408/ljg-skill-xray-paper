@@ -1,7 +1,0 @@
-{
-  "name": "ljg-xray-paper",
-  "description": "Paper X-Ray Scanner — deconstructs academic papers, extracting core contributions, critical assumptions, and napkin-worthy insights. Produces org-mode output.",
-  "author": {
-    "name": "lijigang"
-  }
-}
