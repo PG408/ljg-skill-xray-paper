@@ -43,10 +43,6 @@ ls -la ~/.codex/skills/ljg-xray-paper
 请使用 ljg-xray-paper 分析这篇论文：<论文PDF路径、URL或粘贴内容>
 ```
 
-## Claude 兼容说明
-
-仓库保留 `.claude-plugin/` 元数据，方便已有 Claude 侧流程继续使用；CodeX 适配文件位于 `skills/ljg-xray-paper/agents/openai.yaml`。
-
 ## 输出示例
 
 生成的 Org-mode 报告包含：
